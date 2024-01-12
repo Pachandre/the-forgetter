@@ -2,6 +2,7 @@
     "manifest_version": 2,
     "name": "The Forgetter",
     "version": "1.0",
+    "homepage_url": "https://github.com/Pachandre/the-forgetter",
     "description": "This extension clears urls that match keywords (set in extension) from history. Extension does not clear cookie and any other information",
     "icons": {
         "512": "./src/img/icon512.png",
@@ -32,12 +33,6 @@
         "history",
         "storage"
     ],
-    "browser_specific_settings": {
-        "gecko": {
-            "id": "theforgetter@example.org",
-            "strict_min_version": "42.0"
-        }
-    },
     "background": {
         "page": "./src/html/backgroundPage.html"
     }
