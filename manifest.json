@@ -1,0 +1,44 @@
+{
+    "manifest_version": 2,
+    "name": "The Forgetter",
+    "version": "1.0",
+    "description": "This extension clears urls that match keywords (set in extension) from history. Extension does not clear cookie and any other information",
+    "icons": {
+        "512": "./src/img/icon512.png",
+        "256": "./src/img/icon256.png",
+        "128": "./src/img/icon128.png",
+        "96": "./src/img/icon96.png",
+        "64": "./src/img/icon64.png",
+        "48": "./src/img/icon48.png",
+        "32": "./src/img/icon32.png",
+        "16": "./src/img/icon16.png"
+    },
+    "incognito": "not_allowed",
+    "browser_action": {
+        "default_icon": {
+            "512": "./src/img/icon512.png",
+            "256": "./src/img/icon256.png",
+            "128": "./src/img/icon128.png",
+            "96": "./src/img/icon96.png",
+            "64": "./src/img/icon64.png",
+            "48": "./src/img/icon48.png",
+            "32": "./src/img/icon32.png",
+            "16": "./src/img/icon16.png"
+        },
+        "default_title": "The Forgetter",
+        "default_popup": "./src/html/popup.html"
+    },
+    "permissions": [
+        "history",
+        "storage"
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "theforgetter@example.org",
+            "strict_min_version": "42.0"
+        }
+    },
+    "background": {
+        "page": "./src/html/backgroundPage.html"
+    }
+}
